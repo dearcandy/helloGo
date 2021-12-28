@@ -11,7 +11,7 @@ func main() {
 		arr1[i] = i
 	}
 
-	// print the slice
+	// print the array_and_slice
 	for i := 0; i < len(slice1); i++ {
 		fmt.Printf("Slice at %d is %d\n", i, slice1[i])
 	}
@@ -20,7 +20,7 @@ func main() {
 	fmt.Printf("The length of slice1 is %d\n", len(slice1))
 	fmt.Printf("The capacity of slice1 is %d\n", cap(slice1))
 
-	// grow the slice
+	// grow the array_and_slice
 	slice1 = slice1[0:4]
 	for i := 0; i < len(slice1); i++ {
 		fmt.Printf("Slice at %d is %d\n", i, slice1[i])
@@ -28,6 +28,6 @@ func main() {
 	fmt.Printf("The length of slice1 is %d\n", len(slice1))
 	fmt.Printf("The capacity of slice1 is %d\n", cap(slice1))
 
-	// grow the slice beyond capacity
-	//slice1 = slice1[0:7 ] // panic: runtime error: slice bound out of range
+	// grow the array_and_slice beyond capacity
+	//slice1 = slice1[0:7 ] // panic: runtime error: array_and_slice bound out of slice_range
 }
